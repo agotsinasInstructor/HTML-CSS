@@ -1,0 +1,17 @@
+p{
+    background-color: beige;
+    font-style: italic;
+    border: 2px solid turquoise;
+  }
+
+  h1{
+    color: blue;
+    font-style: normal;
+    background-color: bisque;
+  }
+
+  h2{
+    color:red;
+    font-style: italic;
+    background-color: beige;
+  }

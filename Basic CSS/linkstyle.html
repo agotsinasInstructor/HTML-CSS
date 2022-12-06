@@ -1,0 +1,74 @@
+<!-- 
+  [Author] Gotsinas Antonios
+
+  [Description]
+    
+    [Lesson Basic CSS]
+    
+     
+
+    [Σχετικά ή απαιτούμενα Lessons που πρέπει να έχουμε εκτελέσει για να ανταποκριθούμε]    
+   
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Links with style</title>
+  <style>
+    /* Διαμόρφωση ενός link με όλες τις καταστάσεις που μπορεί να πάρει
+        ΠΡΟΣΟΧΗ η σειρά που αυτές ορίζονται είναι σημαντική δεν πρέπει να αλλάζει*/
+    a:link{
+      color:blue;
+    }
+
+    a:visited{
+      color: purple;      
+    }
+
+    a:hover{
+      color:rgb(53, 219, 61);
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    a:active{
+      color:red;
+    }
+
+    /*
+     Διαμόρφωση ενός link με τη μορφή ενός πλήκτρου 
+     Δημιουργία μίας κλάσης με όνομα button 1
+     Για συντομία χρησιμοποιώ για 2 ιδιότητες την ίδια
+     μορφοποίηση.
+
+     διαμόρφωση των event link και visited
+    */
+  .button1:link, .button1:visited{
+    background-color:blue;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+  }
+ /* Διαμόρφωση των event hover και active*/
+  .button1:hover, .button1:active{
+    background-color: purple;
+    /*άν απενεργοποιήσω αυτή τη γραμμή εφαρμόζεται ταυτόχρονα και η διαμόρφωση a που
+      έχω κάνει πιο πάνω, την ενεργοποιώ για να διορθωθεί το θέμα με το font style να γίνεται
+      italic όταν κάνω hover πάνω στο κουμπί */
+    /* font-style: normal; */
+  }
+  </style>
+</head>
+<body>
+  <a href="linkstyle.html">Ένα link που γυρίζει πίσω στην ίδια σελίδα</a>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <a class="button1" href="index.html">Αρχική</a>
+</body>
+</html>
+
